@@ -1,0 +1,24 @@
+<button class="btn btn-secondary" routerLink="/">Home</button>
+<hr>
+<table class="container">
+  <div>
+    <label class="font-weight-bold">Id: </label>
+    <p>{{book.id}}</p>
+  </div>
+  <div>
+    <label class="font-weight-bold">Title: </label>
+    <p>{{book.title}}</p>
+  </div>
+  <div>
+    <label class="font-weight-bold">Author: </label>
+    <p>{{book.author}}</p>
+  </div>
+  <div>
+    <label class="font-weight-bold">Description: </label>
+    <p>{{book.description}}</p>
+  </div>
+  <button class="btn btn-danger" (click)="onClick()">
+    Delete this book
+  </button>
+</table>
+

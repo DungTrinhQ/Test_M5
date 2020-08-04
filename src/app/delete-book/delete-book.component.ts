@@ -27,7 +27,7 @@ export class DeleteBookComponent implements OnInit {
   }
 
   onClick() {
-    if (confirm('Are you sure you want to delete?')) {
+    if (confirm('Bạn có chắc chắn muốn xóa?')) {
       this.bookService.deleteBook(this.book.id).subscribe(data => {
         this.router.navigate(['/']);
       });

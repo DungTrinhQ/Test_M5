@@ -1,4 +1,4 @@
-<button class="btn btn-secondary" routerLink="/">Home</button>
+<h1>Xóa sách</h1>
 <hr>
 <table class="container">
   <div>
@@ -6,19 +6,20 @@
     <p>{{book.id}}</p>
   </div>
   <div>
-    <label class="font-weight-bold">Title: </label>
+    <label class="font-weight-bold">Tên sách: </label>
     <p>{{book.title}}</p>
   </div>
   <div>
-    <label class="font-weight-bold">Author: </label>
+    <label class="font-weight-bold">Tác giả: </label>
     <p>{{book.author}}</p>
   </div>
   <div>
-    <label class="font-weight-bold">Description: </label>
+    <label class="font-weight-bold">Mô tả: </label>
     <p>{{book.description}}</p>
   </div>
-  <button class="btn btn-danger" (click)="onClick()">
-    Delete this book
-  </button>
+  <div>
+    <button class="btn btn-danger mr-2" (click)="onClick()">Xóa sách</button>
+    <button class="btn btn-outline-danger" routerLink="/">Thoát</button>
+  </div>
 </table>
 

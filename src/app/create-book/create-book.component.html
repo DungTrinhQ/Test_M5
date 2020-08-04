@@ -1,25 +1,26 @@
-<button class="btn btn-secondary" routerLink="/">Home</button>
+<h1>Thêm sách mới</h1>
 <hr>
 <form class="container" [formGroup]="bookForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
-    <label class="font-weight-bold">Title: </label>
+    <label class="font-weight-bold">Tên sách: </label>
     <input formControlName="title" class="form-control">
   </div>
   <div *ngIf="bookForm.get('title').invalid" style="color: red;">
     Invalid title
   </div>
   <div class="form-group">
-    <label class="font-weight-bold">Author: </label>
+    <label class="font-weight-bold">Tác giả: </label>
     <input formControlName="author" class="form-control">
   </div>
   <div *ngIf="bookForm.get('author').invalid" style="color: red;">Invalid author</div>
   <div class="form-group">
-    <label class="font-weight-bold">Description: </label>
+    <label class="font-weight-bold">Mô tả: </label>
     <input formControlName="description" class="form-control">
   </div>
   <div *ngIf="bookForm.get('description').invalid" style="color: red;">Invalid description</div>
 
   <div class="form-group">
-    <button class="btn btn-outline-primary" type="submit">Submit</button>
+    <button class="btn btn-outline-primary mr-2" type="submit">Thêm sách</button>
+    <button class="btn btn-outline-danger" routerLink="/">Thoát</button>
   </div>
 </form>
